@@ -1,0 +1,450 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="P211_map.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="Route.css">
+    <style>
+        #route{
+            height: 2050px;
+            width: 40%;
+            margin-left: 480px;
+        }
+
+    .menu-links li a:hover {
+        background-color: rgb(118, 163, 184);
+        border-radius: 10px;
+    }
+
+    .logout {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+        top: 20px;
+        right: 10px;
+    }
+  
+    .logout a {
+        display: inline-block;
+        padding: 5px 10px;
+        background-color: #F5DEB3;
+        color: #000000;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+  
+    .logout a:hover {
+        background-color: #13506b;
+    }
+    </style>
+    </head>
+
+    <body>
+        <div class="menu-bar">
+            <div class="logo"><img src="images/UTM-LOGO-FULL.png" alt="UTM Logo" width="180px"></div>
+            <ul class="menu-links">
+                <li><a href="http://localhost/UTM/Project/mainPage.php">Home</a></li>
+                <li><a href="http://localhost/UTM/Project/Route.php">Route</a></li>
+                <li><a href="http://localhost/UTM/Project/live_tracking.html">Live Tracking</a></li>
+            </ul>
+            <div class="logout">
+                <a href="logout.php">Logout</a>
+              </div>
+          </div>
+          <div class="photo-container">
+            <div class="photo">
+              <img src="images/UTMimage13.jpg" alt="utmbus">
+              <div class="photo-text">Route P211: Taman Universiti-Larkin Sentral</div>
+            </div>
+        </div> 
+        
+<div id="route">
+    <div class="departure">TERMINAL TMN UNIVERSITI<div class="desc">JLN KEBUDAYAAN 19</div>
+    </div>
+    <div class="r-path double-direction">
+        <div class="zone-go" style="width: calc((100% - 100px) / 2); right: -46.375px;">
+            
+            <div id="AEON" class="stop">
+                <div class="stop-content">AEON TMN UNIVERSITI<div class="desc">JLN PENDIDIKAN</div>
+                    <div class="ride-zone zone-MBIP">MBIP</div>
+                </div>
+                <div class="arrow-content">
+                    <div class="fa fa-caret-down"></div>
+                </div>
+            </div>
+            <div id="CP" class="stop">
+                <div class="stop-content">UTM CENTRE POINT<div class="desc">LINGKARAN ILMU</div>
+                    <div class="ride-zone zone-MBIP">MBIP</div>
+                </div>
+                <div class="arrow-content">
+                    <div class="fa fa-caret-down"></div>
+                </div>                
+            </div>
+            <div id="FKA" class="stop">
+                <div class="stop-content">UTM FKA<div class="desc">LINGKARAN ILMU</div>
+                    <div class="ride-zone zone-MBIP">MBIP</div>
+                </div>
+                <div class="arrow-content">
+                    <div class="fa fa-caret-down"></div>
+                </div>                
+            </div>
+            <div id="N24" class="stop">
+                <div class="stop-content">UTM N24<div class="desc">LINGKARAN ILMU</div>
+                    <div class="ride-zone zone-MBIP">MBIP</div>
+                </div>
+                <div class="arrow-content">
+                    <div class="fa fa-caret-down"></div>
+                </div>                   
+            </div>
+            <div id="P07" class="stop">
+                <div class="stop-content">UTM P07<div class="desc">LINGKARAN ILMU</div>
+                    <div class="ride-zone zone-MBIP">MBIP</div>
+                </div>
+                <div class="arrow-content">
+                    <div class="fa fa-caret-down"></div>
+                </div>                   
+            </div>
+            <div id="P19a" class="stop">
+                <div class="stop-content">UTM P19a<div class="desc">LINGKARAN ILMU</div>
+                    <div class="ride-zone zone-MBIP">MBIP</div>
+                </div>
+                <div class="arrow-content">
+                    <div class="fa fa-caret-down"></div>
+                </div>                   
+            </div>
+            <div id="N24" class="stop">
+                <div class="stop-content">UTM Equine Park<div class="desc">JLN LADANG</div>
+                    <div class="ride-zone zone-MBIP">MBIP</div>
+                </div>
+                <div class="arrow-content">
+                    <div class="fa fa-caret-down"></div>
+                </div>                   
+            </div>
+            <div id="Shell(OPP)" class="stop">
+                <div class="stop-content">SHELL TMN SRI SKUDAI (OPP)<div class="desc">JLN SKUDAI</div>
+                    <div class="ride-zone zone-MBIP">MBIP</div>
+                </div>
+                <div class="arrow-content">
+                    <div class="fa fa-caret-down"></div>
+                </div>                   
+            </div>
+            <div id="Skudai Parade" class="stop">
+                <div class="stop-content">SKUDAI PARADE<div class="desc">JLN SKUDAI</div>
+                    <div class="ride-zone zone-MBIP">MBIP</div>
+                </div>
+                <div class="arrow-content">
+                    <div class="fa fa-caret-down"></div>
+                </div>                   
+            </div>
+            <div id="TUTA" class="stop">
+                <div class="stop-content">TMN UDA TUN AMINAH<div class="desc">JLN SKUDAI</div>
+                    <div class="ride-zone zone-MBIP">MBIP</div>
+                </div>
+                <div class="arrow-content">
+                    <div class="fa fa-caret-down"></div>
+                </div>                   
+            </div>
+            <div id="Impian Skudai" class="stop">
+                <div class="stop-content">TMN IMPIAN SKUDAI<div class="desc">JLN SKUDAI</div>
+                    <div class="ride-zone zone-MBIP">MBIP</div>
+                </div>
+                <div class="arrow-content">
+                    <div class="fa fa-caret-down"></div>
+                </div>                   
+            </div>
+            <div id="Industrial Skudai" class="stop">
+                <div class="stop-content">TMN INDUSTRIAL SKUDAI<div class="desc">JLN SKUDAI</div>
+                    <div class="ride-zone zone-MBIP">MBIP</div>
+                </div>
+                <div class="arrow-content">
+                    <div class="fa fa-caret-down"></div>
+                </div>                   
+            </div>
+            <div id="PARADIGM MALL" class="stop">
+                <div class="stop-content">PARADIGM MALL<div class="desc">JLN SKUDAI</div>
+                    <div class="ride-zone zone-MBIP">MBIP</div>
+                </div>
+                <div class="arrow-content">
+                    <div class="fa fa-caret-down"></div>
+                </div>                   
+            </div>
+            <div id="DATO PENGGAWA BARAT" class="stop">
+                <div class="stop-content">TMN DATO PENGGAWA BARAT<div class="desc">JLN SKUDAI</div>
+                    <div class="ride-zone zone-MBIP">MBIP</div>
+                </div>
+                <div class="arrow-content">
+                    <div class="fa fa-caret-down"></div>
+                </div>                   
+            </div>
+            <div id="TMN JOHOR" class="stop">
+                <div class="stop-content">TMN JOHOR<div class="desc">JLN SKUDAI</div>
+                    <div class="ride-zone zone-MBIP">MBIP</div>
+                </div>
+                <div class="arrow-content">
+                    <div class="fa fa-caret-down"></div>
+                </div>                   
+            </div>
+            <div id="TMN KOBENA" class="stop">
+                <div class="stop-content">TMN KOBENA<div class="desc">JLN SKUDAI</div>
+                    <div class="ride-zone zone-MBIP">MBIP</div>
+                </div>
+                <div class="arrow-content">
+                    <div class="fa fa-caret-down"></div>
+                </div>                   
+            </div>
+            <div id="GIANT TAMPOI" class="stop">
+                <div class="stop-content">GIANT TAMPOI<div class="desc">JLN SKUDAI</div>
+                    <div class="ride-zone zone-MBJB">MBJB</div>
+                </div>
+                <div class="arrow-content">
+                    <div class="fa fa-caret-down"></div>
+                </div>                   
+            </div>
+            <div id="TMN TAMPOI" class="stop">
+                <div class="stop-content">TMN TAMPOI<div class="desc">JLN SKUDAI</div>
+                    <div class="ride-zone zone-MBJB">MBJB</div>
+                </div>
+                <div class="arrow-content">
+                    <div class="fa fa-caret-down"></div>
+                </div>                   
+            </div>
+            <div id="ANGSANA MALL" class="stop">
+                <div class="stop-content">ANGSANA MALL<div class="desc">JLN SKUDAI</div>
+                    <div class="ride-zone zone-MBJB">MBJB</div>
+                </div>
+                <div class="arrow-content">
+                    <div class="fa fa-caret-down"></div>
+                </div>                   
+            </div>
+            <div id="BBU" class="stop">
+                <div class="stop-content">BANDAR BARU UDA<div class="desc">JLN SKUDAI</div>
+                    <div class="ride-zone zone-MBJB">MBJB</div>
+                </div>
+                <div class="arrow-content">
+                    <div class="fa fa-caret-down"></div>
+                </div>                   
+            </div>
+            <div id="TMN SURIA MUAFAKAT" class="stop">
+                <div class="stop-content">TMN SURIA MUAFAKAT<div class="desc">JLN TUN ABDUL RAZAK</div>
+                    <div class="ride-zone zone-MBJB">MBJB</div>
+                </div>
+                <div class="arrow-content">
+                    <div class="fa fa-caret-down"></div>
+                </div>                   
+            </div>
+            <div id="PKKTU" class="stop">
+                <div class="stop-content">PUSAT KOKURIKULUM KEM TASEK UTARA<div class="desc">JLN TUN ABDUL RAZAK</div>
+                    <div class="ride-zone zone-MBJB">MBJB</div>
+                </div>
+                <div class="arrow-content">
+                    <div class="fa fa-caret-down"></div>
+                </div>                   
+            </div>
+        </div>
+        <div class="direction-container">
+            <div class="direction-line"></div>
+        </div>
+        <div class="direction-container">
+            <div class="direction-line"></div>
+        </div>
+        <div class="zone-back" style="width: calc((100% - 100px) / 2); left: -46.375px;">
+
+            <div id="AEON (OPP)" class="stop">
+                <div class="arrow-content">
+                    <div class="fa fa-caret-up"></div>
+                </div>
+                <div class="stop-content">AEON TMN U (OPP)<div class="desc">JLN PENDIDIKAN</div>
+                    <div class="ride-zone zone-MBIP">MBIP</div>
+                </div>
+            </div>
+            <div id="P19a" class="stop">
+                <div class="arrow-content">
+                    <div class="fa fa-caret-up"></div>
+                </div>
+                <div class="stop-content">UTM P19a<div class="desc">LINGKARAN ILMU</div>
+                    <div class="ride-zone zone-MBIP">MBIP</div>
+                </div>
+            </div>
+            <div id="P07" class="stop">
+                <div class="arrow-content">
+                    <div class="fa fa-caret-up"></div>
+                </div>
+                <div class="stop-content">UTM P07<div class="desc">LINGKARAN ILMU</div>
+                    <div class="ride-zone zone-MBIP">MBIP</div>
+                </div>
+            </div>
+            <div id="N24" class="stop">
+                <div class="arrow-content">
+                    <div class="fa fa-caret-up"></div>
+                </div>
+                <div class="stop-content">UTM N24<div class="desc">LINGKARAN ILMU</div>
+                    <div class="ride-zone zone-MBIP">MBIP</div>
+                </div>
+            </div>
+            <div id="FKA" class="stop">
+                <div class="arrow-content">
+                    <div class="fa fa-caret-up"></div>
+                </div>
+                <div class="stop-content">UTM FKA<div class="desc">LINGKARAN ILMU</div>
+                    <div class="ride-zone zone-MBIP">MBIP</div>
+                </div>
+            </div>
+            <div id="CP" class="stop">
+                <div class="arrow-content">
+                    <div class="fa fa-caret-up"></div>
+                </div>
+                <div class="stop-content">UTM CP<div class="desc">LINGKARAN ILMU</div>
+                    <div class="ride-zone zone-MBIP">MBIP</div>
+                </div>
+            </div>
+            <div id="TS" class="stop">
+                <div class="arrow-content">
+                    <div class="fa fa-caret-up"></div>
+                </div>
+                <div class="stop-content">TMN SKUDAI<div class="desc">LEBUHRAYA SKUDAI-PONTIAN</div>
+                    <div class="ride-zone zone-MBIP">MBIP</div>
+                </div>
+            </div>
+            <div id="SMKS" class="stop">
+                <div class="arrow-content">
+                    <div class="fa fa-caret-up"></div>
+                </div>
+                <div class="stop-content">SMK SKUDAI<div class="desc">LEBUHRAYA SKUDAI-PONTIAN</div>
+                    <div class="ride-zone zone-MBIP">MBIP</div>
+                </div>
+            </div>
+            <div id="STSS" class="stop">
+                <div class="arrow-content">
+                    <div class="fa fa-caret-up"></div>
+                </div>
+                <div class="stop-content">SHELL TAMAN SRI SKUDAI<div class="desc">JLN SKUDAI</div>
+                    <div class="ride-zone zone-MBIP">MBIP</div>
+                </div>
+            </div>
+            <div id="SKKB10" class="stop">
+                <div class="arrow-content">
+                    <div class="fa fa-caret-up"></div>
+                </div>
+                <div class="stop-content">SK SKUDAI BATU 10<div class="desc">JLN SKUDAI</div>
+                    <div class="ride-zone zone-MBIP">MBIP</div>
+                </div>
+            </div>
+            <div id="MBIP" class="stop">
+                <div class="arrow-content">
+                    <div class="fa fa-caret-up"></div>
+                </div>
+                <div class="stop-content">MBIP<div class="desc">JLN SKUDAI</div>
+                    <div class="ride-zone zone-MBIP">MBIP</div>
+                </div>
+            </div>
+            <div id="KS" class="stop">
+                <div class="arrow-content">
+                    <div class="fa fa-caret-up"></div>
+                </div>
+                <div class="stop-content">KAMPUNG SKUDAI<div class="desc">JLN SKUDAI</div>
+                    <div class="ride-zone zone-MBIP">MBIP</div>
+                </div>
+            </div>
+            <div id="KK" class="stop">
+                <div class="arrow-content">
+                    <div class="fa fa-caret-up"></div>
+                </div>
+                <div class="stop-content">SJK(C) KUA KUANG<div class="desc">JLN SKUDAI</div>
+                    <div class="ride-zone zone-MBIP">MBIP</div>
+                </div>
+            </div>
+            <div id="SUTERA" class="stop">
+                <div class="arrow-content">
+                    <div class="fa fa-caret-up"></div>
+                </div>
+                <div class="stop-content">TMN SUTERA UTAMA<div class="desc">JLN SKUDAI</div>
+                    <div class="ride-zone zone-MBIP">MBIP</div>
+                </div>
+            </div>
+            <div id="PM" class="stop">
+                <div class="arrow-content">
+                    <div class="fa fa-caret-up"></div>
+                </div>
+                <div class="stop-content">PARADIGM MALL (OPP)<div class="desc">JLN SKUDAI</div>
+                    <div class="ride-zone zone-MBIP">MBIP</div>
+                </div>
+            </div>
+            <div id="KIP" class="stop">
+                <div class="arrow-content">
+                    <div class="fa fa-caret-up"></div>
+                </div>
+                <div class="stop-content">KIP MART<div class="desc">JLN SKUDAI</div>
+                    <div class="ride-zone zone-MBIP">MBIP</div>
+                </div>
+            </div>
+            <div id="KSJ" class="stop">
+                <div class="arrow-content">
+                    <div class="fa fa-caret-up"></div>
+                </div>
+                <div class="stop-content">KAMPUNG SRI JAYA<div class="desc">JLN SKUDAI</div>
+                    <div class="ride-zone zone-MBIP">MBIP</div>
+                </div>
+            </div>
+            <div id="SKKP" class="stop">
+                <div class="arrow-content">
+                    <div class="fa fa-caret-up"></div>
+                </div>
+                <div class="stop-content">SK KAMPUNG PASIR<div class="desc">JLN SKUDAI</div>
+                    <div class="ride-zone zone-MBJB">MBJB</div>
+                </div>
+            </div>
+            <div id="KP" class="stop">
+                <div class="arrow-content">
+                    <div class="fa fa-caret-up"></div>
+                </div>
+                <div class="stop-content">KAMPUNG PASIR<div class="desc">JLN SKUDAI</div>
+                    <div class="ride-zone zone-MBJB">MBJB</div>
+                </div>
+            </div>
+            <div id="KKT" class="stop">
+                <div class="arrow-content">
+                    <div class="fa fa-caret-up"></div>
+                </div>
+                <div class="stop-content">KLINIK KESIHATAN TAMPOI<div class="desc">JLN SKUDAI</div>
+                    <div class="ride-zone zone-MBJB">MBJB</div>
+                </div>
+            </div>
+            <div id="BBU(OPP)" class="stop">
+                <div class="arrow-content">
+                    <div class="fa fa-caret-up"></div>
+                </div>
+                <div class="stop-content">BANDAR BARU UDA (OPP)<div class="desc">JLN SKUDAI</div>
+                    <div class="ride-zone zone-MBJB">MBJB</div>
+                </div>
+            </div>
+            <div id="TASEK" class="stop">
+                <div class="arrow-content">
+                    <div class="fa fa-caret-up"></div>
+                </div>
+                <div class="stop-content">TMN TASEK<div class="desc">JLN TUN ABDUL RAZAK</div>
+                    <div class="ride-zone zone-MBJB">MBJB</div>
+                </div>
+            </div>
+            <div id="Kampung" class="stop">
+                <div class="arrow-content">
+                    <div class="fa fa-caret-up"></div>
+                </div>
+                <div class="stop-content">KAMPUNG BARU EMAPT SETENFAH SKUDAI KANAN<div class="desc">JLN TUN ABDUL RAZAK</div>
+                    <div class="ride-zone zone-MBJB">MBJB</div>
+                </div>
+            </div>
+            <div id="JKR" class="stop">
+                <div class="arrow-content">
+                    <div class="fa fa-caret-up"></div>
+                </div>
+                <div class="stop-content">DEWAN JKR<div class="desc">JLN TUN ABDUL RAZAK</div>
+                    <div class="ride-zone zone-MBJB">MBJB</div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="arrival">LARKIN SENTRAL<div class="desc">JLN KENYALANG</div>
+    </div>
+</div>
+    </body>
+</html>

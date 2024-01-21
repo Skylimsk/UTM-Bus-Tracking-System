@@ -1,0 +1,200 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="F_map.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="Route.css">
+    <style>
+        #route{
+            height: 980px;
+            width: 40%;
+            margin-left: 480px;
+        }
+
+    .menu-links li a:hover {
+        background-color: rgb(118, 163, 184);
+        border-radius: 10px;
+    }
+
+    .logout {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+        top: 20px;
+        right: 10px;
+    }
+  
+    .logout a {
+        display: inline-block;
+        padding: 5px 10px;
+        background-color: #F5DEB3;
+        color: #000000;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+  
+    .logout a:hover {
+        background-color: #13506b;
+    }
+    </style>
+    </head>
+
+    <body>
+        <div class="menu-bar">
+            <div class="logo"><img src="images/UTM-LOGO-FULL.png" alt="UTM Logo" width="180px"></div>
+            <ul class="menu-links">
+                <li><a href="http://localhost/UTM/Project/mainPage.php">Home</a></li>
+                <li><a href="http://localhost/UTM/Project/Route.php">Route</a></li>
+                <li><a href="http://localhost/UTM/Project/live_tracking.html">Live Tracking</a></li>
+            </ul>
+            <div class="logout">
+                <a href="logout.php">Logout</a>
+              </div>
+          </div>
+          <div class="photo-container">
+            <div class="photo">
+              <img src="images/UTMimage13.jpg" alt="utmbus">
+              <div class="photo-text">Route F1/F2/F3: KTR-Centre Point</div>
+            </div>
+        </div> 
+        
+<div id="route">
+    <div class="departure">K04 KOLEJ TUN RAZAK<div class="desc">JLN CENGAL</div>
+    </div>
+    <div class="r-path double-direction">
+        <div class="zone-go" style="width: calc((100% - 100px) / 2); right: -46.375px;">
+            <div id="K13" class="stop">
+                <div class="stop-content">K13 KOLEJ TUN RAZAK<div class="desc">JLN CENGAL</div>
+                    <div class="ride-zone zone-R">Zone K</div>
+                </div>
+                <div class="arrow-content">
+                    <div class="fa fa-caret-down"></div>
+                </div>
+            </div>
+            <div id="K23" class="stop">
+                <div class="stop-content">K23 KOLEJ TUN RAZAK<div class="desc">JLN CENGAL</div>
+                    <div class="ride-zone zone-R">Zone K</div>
+                </div>
+                <div class="arrow-content">
+                    <div class="fa fa-caret-down"></div>
+                </div>
+            </div>
+            <div id="K28" class="stop">
+                <div class="stop-content">K28 KOLEJ TUN RAZAK<div class="desc">JLN CENGAL</div>
+                    <div class="ride-zone zone-R">Zone K</div>
+                </div>
+                <div class="arrow-content">
+                    <div class="fa fa-caret-down"></div>
+                </div>
+            </div>
+            <div id="L22" class="stop">
+                <div class="stop-content">L22 KOLEJ TUN HUSSEIN ONN<div class="desc">JLN MERBAU</div>
+                    <div class="ride-zone zone-L">Zone L</div>
+                </div>
+                <div class="arrow-content">
+                    <div class="fa fa-caret-down"></div>
+                </div>
+            </div>
+            <div id="L32" class="stop">
+                <div class="stop-content">L32 KOLEJ TUN HUSSEIN ONN<div class="desc">JLN MERBAU</div>
+                    <div class="ride-zone zone-L">Zone L</div>
+                </div>
+                <div class="arrow-content">
+                    <div class="fa fa-caret-down"></div>
+                </div>
+            </div>
+            <div id="L28" class="stop">
+                <div class="stop-content">L28 KOLEJ TUN HUSSEIN ONN<div class="desc">JLN MERBAU</div>
+                    <div class="ride-zone zone-L">Zone L</div>
+                </div>
+                <div class="arrow-content">
+                    <div class="fa fa-caret-down"></div>
+                </div>
+            </div>
+            <div id="L12" class="stop">
+                <div class="stop-content">L12 KOLEJ TUN HUSSEIN ONN<div class="desc">JLN MERBAU</div>
+                    <div class="ride-zone zone-L">Zone L</div>
+                </div>
+                <div class="arrow-content">
+                    <div class="fa fa-caret-down"></div>
+                </div>
+            </div>
+            <div id="MA1" class="stop">
+                <div class="stop-content">MA1 KOLEJ TUN DR. ISMAIL<div class="desc">LENGKUK RESAK</div>
+                    <div class="ride-zone zone-M">Zone M</div>
+                </div>
+                <div class="arrow-content">
+                    <div class="fa fa-caret-down"></div>
+                </div>
+            </div>
+            <div id="M22" class="stop">
+                <div class="stop-content">M22 KOLEJ TUN DR. ISMAIL<div class="desc">LENGKUK RESAK</div>
+                    <div class="ride-zone zone-M">Zone M</div>
+                </div>
+                <div class="arrow-content">
+                    <div class="fa fa-caret-down"></div>
+                </div>
+            </div>
+            <div id="M05" class="stop">
+                <div class="stop-content">M05 KOLEJ TUN DR. ISMAIL<div class="desc">LENGKUK RESAK</div>
+                    <div class="ride-zone zone-M">Zone M</div>
+                </div>
+                <div class="arrow-content">
+                    <div class="fa fa-caret-down"></div>
+                </div>
+            </div>
+        </div>
+        <div class="direction-container">
+            <div class="direction-line"></div>
+        </div>
+        <div class="direction-container">
+            <div class="direction-line"></div>
+        </div>
+        <div class="zone-back" style="width: calc((100% - 100px) / 2); left: -46.375px;">
+
+            <div id="cengal" class="stop">
+                <div class="arrow-content">
+                    <div class="fa fa-caret-up"></div>
+                </div>
+                <div class="stop-content">ARKED CENGAL (OPP) <div class="desc">JLN CENGAL</div>
+                    <div class="ride-zone zone-L">Zone L</div>
+                </div>
+            </div>
+            <div id="CP" class="stop">
+                <div class="arrow-content">
+                    <div class="fa fa-caret-up"></div>
+                </div>
+                <div class="stop-content">CENTRE POINT <div class="desc">LINGKARAN ILMU</div>
+                    <div class="ride-zone zone-1">Zone B</div>
+                </div>
+            </div>
+            <div id="P19a" class="stop">
+                <div class="arrow-content">
+                    <div class="fa fa-caret-up"></div>
+                </div>
+                <div class="stop-content">P19a FAKULTI KEJUTERAAN ELEKTRIK<div class="desc">LINGKARAN ILMU</div>
+                    <div class="ride-zone zone-1">Zone P</div>
+                </div>
+            </div>
+            <div id="E04" class="stop">
+                <div class="arrow-content">
+                    <div class="fa fa-caret-up"></div>
+                </div>
+                <div class="stop-content">E03 FAKULTI SAINS<div class="desc">JLN AMAL</div>
+                    <div class="ride-zone zone-1">Zone E</div>
+                </div>
+            </div>
+            <div id="D05" class="stop">
+                <div class="arrow-content">
+                    <div class="fa fa-caret-up"></div>
+                </div>
+                <div class="stop-content">D05 LANGUAGE ACADEMY<div class="desc">JLN AMAL</div>
+                    <div class="ride-zone zone-1">Zone D</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="arrival">D01 UTM CIAM<div class="desc">JLN AMAL</div>
+    </div>
+</div>
+    </body>
+</html>

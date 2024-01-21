@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Live Bus Tracking</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="navbar.css" />
+    <style>
+      .menu-links li a:hover {
+        background-color: rgb(118, 163, 184);
+        border-radius: 10px;
+      }
+
+      .logout {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+        top: 20px;
+        right: 10px;
+      }
+
+      .logout a {
+        display: inline-block;
+        padding: 5px 10px;
+        background-color: #f5deb3;
+        color: #000000;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+      }
+
+      .logout a:hover {
+        background-color: #13506b;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="menu-bar">
+      <div class="logo">
+        <img src="images/UTM-LOGO-FULL.png" alt="UTM Logo" width="180px" />
+      </div>
+      <ul class="menu-links">
+        <li><a href="http://localhost/UTM/Project/mainPage.php">Home</a></li>
+        <li><a href="http://localhost/UTM/Project/Route.php">Route</a></li>
+        <li>
+          <a href="http://localhost/UTM/Project/live_tracking.html"
+            >Live Tracking</a
+          >
+        </li>
+      </ul>
+      <div class="logout">
+        <a href="logout.php">Logout</a>
+      </div>
+    </div>
+    <div id="map"></div>
+
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAsQPpEZqyZPr4ikBq3BcjzXYouZFqAj9c&callback=initMap"
+      async
+      defer
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

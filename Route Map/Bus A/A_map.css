@@ -1,0 +1,155 @@
+#route {
+    margin: 50px;
+    padding: 20px 0;
+    width: 800px;
+    height: 1000px;
+}
+
+.route_loading, .route_notice, #route {
+    border-radius: 16px;
+    background: #fff;
+    box-shadow: 0 0 10px 0 rgb(0 0 0/50%);
+}
+
+
+
+#route>.departure, #route>.arrival {
+    width: 80%;
+    border: 5px solid #800000;
+    border-radius: 16px;
+    margin: 0 auto;
+}
+
+.r-path {
+    display: flex;
+}
+
+#route>.departure, #route>.arrival, .route_loading, .route_notice {
+    text-align: center;
+    padding: 8px;
+}
+
+element.style {
+    width: calc((100% - 100px) / 2);
+    right: -46.375px;
+}
+
+.double-direction>.zone-go {
+    text-align: right !important;
+}
+
+.double-direction>.zone-back {
+    text-align: left !important;
+}
+
+.zone-go, .zone-back {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.double-direction>.zone-go>.stop {
+    justify-content: flex-end !important;
+}
+
+.stop {
+    display: flex !important;
+}
+
+.stop-content {
+    width: auto;
+    padding: 16px 0 !important;
+}
+
+.zone-1 {
+    background: #f8a617;
+}
+
+.zone-M {
+    background: #2abb00;
+}
+
+.zone-L {
+    background: #0390d1;
+}
+
+.zone-R
+{
+    background:#52c7fc;
+}
+
+.ride-zone {
+    font-size: 80% !important;
+    padding: 0 8px;
+    display: inline-flex;
+    color: #fff;
+}
+
+.arrow-content {
+    display: flex !important;
+    padding: 0 12px;
+    align-items: center !important;
+    justify-content: center !important;
+    color: #800000;
+}
+
+.arrow-content>.fa {
+    font-size: 30px;
+}
+
+.fa, .fas {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+
+.fa, .fab, .fad, .fal, .far, .fas {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
+
+.fa-caret-down:before {
+    content: "\f0d7";
+}
+
+.fa-caret-up:before {
+    content: "\f0d8";
+}
+
+.direction-container {
+    width: 50px;
+}
+
+.direction-line {
+    background: #800000;
+    width: 5px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+
+
+.desc {
+    font-size: 80% !important;
+}
+
+.elementor *, .elementor :after, .elementor :before {
+    box-sizing: border-box;
+}
+
+a, abbr, acronym, address, applet, big, blockquote, body, caption, cite, code, dd, del, dfn, div, dl, dt, em, fieldset, font, form, h1, h2, h3, h4, h5, h6, html, iframe, ins, kbd, label, legend, li, object, ol, p, pre, q, s, samp, small, span, strike, strong, sub, sup, table, tbody, td, tfoot, th, thead, tr, tt, ul, var {
+    border: 0;
+    font-size: 100%;
+    font-style: inherit;
+    font-weight: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+

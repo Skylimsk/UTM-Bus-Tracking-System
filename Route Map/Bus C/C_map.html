@@ -1,0 +1,177 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="C_map.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="Route.css">
+    <style>
+        #route{
+            height: 800px;
+            width: 40%;
+            margin-left: 480px;
+        }
+
+    .menu-links li a:hover {
+        background-color: rgb(118, 163, 184);
+        border-radius: 10px;
+    }
+
+    .logout {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+        top: 20px;
+        right: 10px;
+    }
+  
+    .logout a {
+        display: inline-block;
+        padding: 5px 10px;
+        background-color: #F5DEB3;
+        color: #000000;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+  
+    .logout a:hover {
+        background-color: #13506b;
+    }
+    </style>
+
+    </head>
+
+    <body>
+        <div class="menu-bar">
+            <div class="logo"><img src="images/UTM-LOGO-FULL.png" alt="UTM Logo" width="180px"></div>
+            <ul class="menu-links">
+                <li><a href="http://localhost/UTM/Project/mainPage.php">Home</a></li>
+                <li><a href="http://localhost/UTM/Project/Route.php">Route</a></li>
+                <li><a href="http://localhost/UTM/Project/live_tracking.html">Live Tracking</a></li>
+            </ul>
+            <div class="logout">
+                <a href="logout.php">Logout</a>
+              </div>
+          </div>
+          <div class="photo-container">
+            <div class="photo">
+              <img src="images/UTMimage13.jpg" alt="utmbus">
+              <div class="photo-text">Route C1/C2/C3: K9/K10-K9/K10</div>
+            </div>
+        </div> 
+        
+<div id="route">
+    <div class="departure">KOLEJ 10<div class="desc"></div>
+    </div>
+    <div class="r-path double-direction">
+        <div class="zone-go" style="width: calc((100% - 100px) / 2); right: -46.375px;">
+            <div id="K9" class="stop">
+                <div class="stop-content">KOLEJ 9<div class="desc"></div>
+                    <div class="ride-zone zone-K9K10">Zone U</div>
+                </div>
+                <div class="arrow-content">
+                    <div class="fa fa-caret-down"></div>
+                </div>
+            </div>
+            <div id="S47" class="stop">
+                <div class="stop-content">S47 KOLEJ TUANKU CANSELOR<div class="desc">JLN KEMPAS 2</div>
+                    <div class="ride-zone zone-S">Zone S</div>
+                </div>
+                <div class="arrow-content">
+                    <div class="fa fa-caret-down"></div>
+                </div>
+            </div>
+            <div id="S04" class="stop">
+                <div class="stop-content">S04 KOLEJ TUANKU CANSELOR<div class="desc">JLN KEMPAS 2</div>
+                    <div class="ride-zone zone-S">Zone S</div>
+                </div>
+                <div class="arrow-content">
+                    <div class="fa fa-caret-down"></div>
+                </div>
+            </div>
+            <div id="S02" class="stop">
+                <div class="stop-content">S02 KOLEJ TUANKU CANSELOR<div class="desc">JLN KEMPAS 2</div>
+                    <div class="ride-zone zone-S">Zone S</div>
+                </div>
+                <div class="arrow-content">
+                    <div class="fa fa-caret-down"></div>
+                </div>
+            </div>
+            <div id="P19a" class="stop">
+                <div class="stop-content">P19a FAKULTI KEJUTERAAN ELEKTRIK<div class="desc">LINGKARAN ILMU</div>
+                    <div class="ride-zone zone-1">Zone P</div>
+                </div>
+                <div class="arrow-content">
+                    <div class="fa fa-caret-down"></div>
+                </div>
+            </div>
+        </div>
+        <div class="direction-container">
+            <div class="direction-line"></div>
+        </div>
+        <div class="direction-container">
+            <div class="direction-line"></div>
+        </div>
+        <div class="zone-back" style="width: calc((100% - 100px) / 2); left: -46.375px;">
+
+            <div id="K9" class="stop">
+                <div class="arrow-content">
+                    <div class="fa fa-caret-up"></div>
+                </div>
+                <div class="stop-content">KOLEJ 9 (OPP)<div class="desc"></div>
+                    <div class="ride-zone zone-U">Zone U</div>
+                </div>
+            </div>
+            <div id="S43" class="stop">
+                <div class="arrow-content">
+                    <div class="fa fa-caret-up"></div>
+                </div>
+                <div class="stop-content">S43 KOLEJ TUANKU CANSELOR<div class="desc">JLN KEMPAS 2</div>
+                    <div class="ride-zone zone-S">Zone S</div>
+                </div>
+            </div>
+            <div id="court" class="stop">
+                <div class="arrow-content">
+                    <div class="fa fa-caret-up"></div>
+                </div>
+                <div class="stop-content">COURT KOLEJ TUANKU CANSELOR<div class="desc">JLN KEMPAS 2</div>
+                    <div class="ride-zone zone-S">Zone S</div>
+                </div>
+            </div>
+            <div id="S38" class="stop">
+                <div class="arrow-content">
+                    <div class="fa fa-caret-up"></div>
+                </div>
+                <div class="stop-content">S38 KOLEJ TUANKU CANSELOR<div class="desc">JLN KEMPAS 2</div>
+                    <div class="ride-zone zone-S">Zone S</div>
+                </div>
+            </div>
+            <div id="E03" class="stop">
+                <div class="arrow-content">
+                    <div class="fa fa-caret-up"></div>
+                </div>
+                <div class="stop-content">E03 FAKULTI SAINS<div class="desc">JLN AMAL</div>
+                    <div class="ride-zone zone-1">Zone E</div>
+                </div>
+            </div>
+            <div id="D05" class="stop">
+                <div class="arrow-content">
+                    <div class="fa fa-caret-up"></div>
+                </div>
+                <div class="stop-content">D05 LANGUAGE ACADEMY<div class="desc">JLN AMAL</div>
+                    <div class="ride-zone zone-1">Zone D</div>
+                </div>
+            </div>
+            <div id="D01" class="stop">
+                <div class="arrow-content">
+                    <div class="fa fa-caret-up"></div>
+                </div>
+                <div class="stop-content">D01 UTM CIAM<div class="desc">JLN AMAL</div>
+                    <div class="ride-zone zone-1">Zone D</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="arrival">CENTRE POINT<div class="desc">LINGKARAN ILMU</div>
+    </div>
+</div>
+    </body>
+</html>

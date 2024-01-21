@@ -1,0 +1,245 @@
+<html>
+  <head>
+    <title>Live Tracking List</title>
+    <link rel="stylesheet" type="text/css" href="navbar.css" />
+    <style>
+    .menu-links li a:hover {
+        background-color: rgb(118, 163, 184);
+        border-radius: 10px;
+    }
+
+    .logout {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+        top: 20px;
+        right: 10px;
+    }
+  
+    .logout a {
+        display: inline-block;
+        padding: 5px 10px;
+        background-color: #F5DEB3;
+        color: #000000;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+  
+    .logout a:hover {
+        background-color: #13506b;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="menu-bar">
+      <div class="logo">
+        <img src="images/UTM-LOGO-FULL.png" alt="UTM Logo" width="180px" />
+      </div>
+      <ul class="menu-links">
+        <li><a href="mainPage.php">Home</a></li>
+        <li><a href="Route.php">Route</a></li>
+        <li><a href="live_tracking.html">Live Tracking</a></li>
+      </ul>
+      <div class="logout">
+        <a href="logout.php">Logout</a>
+      </div>
+    </div>
+    <div class="photo-container">
+      <div class="photo">
+        <img src="images/UTMimage13.jpg" alt="utmbus" />
+        <div class="photo-text">Live Tracking List</div>
+      </div>
+    </div>
+    <br />
+    <div class="bus-selector">
+      <div class="tabs">
+        <div
+          class="tab active"
+          onclick="toggleTab('UTM Bus')"
+          data-tab="UTM Bus"
+        >
+          UTM Bus
+        </div>
+        <div class="tab" onclick="toggleTab('P211')" data-tab="P211">P211</div>
+      </div>
+      <div class="tab-content active" data-tab="UTM Bus">
+        <p
+          style="
+            font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+            font-size: 25px;
+          "
+        >
+          Bus Routes
+        </p>
+        <table>
+          <thead>
+            <tr>
+              <th colspan="2">Route</th>
+              <th>Departure</th>
+              <th>Arrival</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="route" rowspan="2">
+                <a href="Bus A/Combined A/index.html">Bus A</a>
+              </td>
+              <td class="route"><a href="Bus A/Bus A1/index.html">A1</a></td>
+              <td rowspan="2">KP</td>
+              <td rowspan="2">KP</td>
+            </tr>
+            <tr>
+              <td class="route"><a href="Bus A/Bus A2/index.html">A2</a></td>
+            </tr>
+
+            <tr>
+              <td class="route" rowspan="3">
+                <a href="Bus B/Combined B/index.html">Bus B</a>
+              </td>
+              <td class="route"><a href="Bus B/Bus B1/index.html">B1</a></td>
+              <td rowspan="3">KP, K9/K10</td>
+              <td rowspan="3">Cluster (T02-T08)</td>
+            </tr>
+            <tr>
+              <td class="route"><a href="Bus B/Bus B2/index.html">B2</a></td>
+            </tr>
+            <tr>
+              <td class="route"><a href="Bus B/Bus B3/">B3</a></td>
+            </tr>
+
+            <tr>
+              <td class="route" rowspan="3">
+                <a href="Bus C/Combined C/index.html">Bus C</a>
+              </td>
+              <td class="route"><a href="Bus C/Bus C1/index.html">C1</a></td>
+              <td rowspan="3">K9/K10</td>
+              <td rowspan="3">K9/K10</td>
+            </tr>
+            <tr>
+              <td class="route"><a href="Bus C/Bus C2/index.html">C2</a></td>
+            </tr>
+            <tr>
+              <td class="route"><a href="Bus C/Bus C3/index.html">C3</a></td>
+            </tr>
+
+            <tr>
+              <td class="route" rowspan="2">
+                <a href="Bus D/Combined D/index.html">Bus D</a>
+              </td>
+              <td class="route"><a href="Bus D/Bus D1/index.html">D1</a></td>
+              <td rowspan="2">KDOJ</td>
+              <td rowspan="2">Lingkaran Ilmu</td>
+            </tr>
+            <tr>
+              <td class="route"><a href="Bus D/Bus D2/index.html">D2</a></td>
+            </tr>
+
+            <tr>
+              <td class="route" rowspan="2">
+                <a href="Bus E/Combined E/index.html">Bus E</a>
+              </td>
+              <td class="route"><a href="Bus E/Bus E1/index.html">E1</a></td>
+              <td rowspan="2">KDOJ/KLG/KDSE</td>
+              <td rowspan="2">Cluster (T02-T08)</td>
+            </tr>
+            <tr>
+              <td class="route"><a href="Bus E/Bus E2/index.html">E2</a></td>
+            </tr>
+
+            <tr>
+              <td class="route" rowspan="3">
+                <a href="Bus F/Combined F/index.html">Bus F</a>
+              </td>
+              <td class="route"><a href="Bus F/Bus F1/index.html">F1</a></td>
+              <td rowspan="3">KTR</td>
+              <td rowspan="3">Centre Point</td>
+            </tr>
+            <tr>
+              <td class="route"><a href="Bus F/Bus F2/index.html">F2</a></td>
+            </tr>
+            <tr>
+              <td class="route"><a href="Bus F/Bus F3/index.html">F3</a></td>
+            </tr>
+
+            <tr>
+              <td class="route" rowspan="3">
+                <a href="Bus G/Combined G/index.html">Bus G</a>
+              </td>
+              <td class="route"><a href="Bus G/Bus G1/index.html">G1</a></td>
+              <td rowspan="3">KTR/KTHO/KTDI</td>
+              <td rowspan="3">Centre Point</td>
+            </tr>
+            <tr>
+              <td class="route"><a href="Bus G/Bus G2/index.html">G2</a></td>
+            </tr>
+            <tr>
+              <td class="route"><a href="Bus G/Bus G3/index.html">G3</a></td>
+            </tr>
+            <tr>
+              <td class="route" colspan="2">Bus H</td>
+              <td>Centre Point</td>
+              <td>V01 (Taman Universiti)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="tab-content" data-tab="P211">
+        <p style="font-family: Arial, Helvetica, sans-serif; font-size: 25px">
+          Bus Routes
+        </p>
+        <table>
+          <thead>
+            <tr>
+              <th>Route</th>
+              <th>Departure</th>
+              <th>Arrival</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="route">
+                <a href="P211/P211-Larkin/index.html">P211 (Larkin)</a>
+              </td>
+              <td>Terminal Taman Universiti</td>
+              <td>Larkin Sentral</td>
+            </tr>
+            <tr>
+              <td class="route">
+                <a href="P211/P211-Taman U/index.html"
+                  >P211 (Terminal Taman Universiti)</a
+                >
+              </td>
+              <td>Larkin Sentral</td>
+              <td>Terminal Taman Universiti</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <script>
+      function toggleTab(tabText) {
+        var tabContents = document.querySelectorAll(".tab-content");
+
+        tabContents.forEach(function (tabContent) {
+          tabContent.classList.remove("active");
+        });
+
+        var selectedTabContent = document.querySelector(
+          '.tab-content[data-tab="' + tabText + '"]'
+        );
+        selectedTabContent.classList.add("active");
+
+        var tabs = document.querySelectorAll(".tab");
+
+        tabs.forEach(function (tab) {
+          tab.classList.remove("active");
+        });
+
+        var selectedTab = document.querySelector(
+          '.tab[data-tab="' + tabText + '"]'
+        );
+        selectedTab.classList.add("active");
+      }
+    </script>
+  </body>
+</html>
